@@ -1,8 +1,8 @@
 #! /usr/bin/env perl
-# launch a specific sub when we see a specific mac address from a 
-# list (<%macs>) on the <$iface> interface # with a minimum number of
+# Launch a specific sub when we see a specific mac address from a 
+# list (<%macs>) on the <$iface> interface with a minimum number of
 # seconds (<$interval>) between launches.
-# designed for the amazon dash button.
+# Designed for the amazon dash button.
 use strict;
 use warnings;
 use Net::Pcap::Easy;
