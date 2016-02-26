@@ -2,17 +2,19 @@
 # launch a specific sub when we see a specific mac address from a 
 # list (<%macs>) on the <$iface> interface # with a minimum number of
 # seconds (<$interval>) between launches.
+# designed for the amazon dash button.
 use strict;
 use warnings;
 use Net::Pcap::Easy;
 use Proc::PID::File;
 die "Already running!" if Proc::PID::File->running();
 
-my $iface= "wlan0";
+my $iface= "br0";
 my $interval = 60;
 my %macs = (
 	 "a0:02:dc:c5:d8:69" => \&kraftdinner,
-#	 "74:da:38:2e:0a:26" => \&rpi,
+	 "74:da:38:2e:0a:26" => \&rpi,
+ 	 "00:9c:02:a0:3e:8b" => \&mc,
 );
 
 sub p {print @_};
@@ -47,5 +49,8 @@ sub rpi {
 	p"$mac\n";
 }
 sub kraftdinner {
+	p"hi button!\n";
+}
+sub mc {
 	p"hi button!\n";
 }
