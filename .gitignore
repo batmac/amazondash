@@ -1,2 +1,3 @@
-local
+local/
+vendor/
 macs.dat
