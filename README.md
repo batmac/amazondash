@@ -1,3 +1,8 @@
 # amazondash
+handle your amazon dash buttons in perl
 
-"cpanm --installdeps ." or "carton install".
+## INSTALL
+### DEPENDENCIES
+```cpanm --installdeps .```
+_or_
+```carton install```
