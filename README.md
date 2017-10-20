@@ -3,6 +3,10 @@ handle your amazon dash buttons in perl
 
 ## INSTALL
 ### DEPENDENCIES
-```cpanm --installdeps .```
+```sh
+cpanm --installdeps .
+```
 _or_
-```carton install```
+```sh
+carton install
+```
